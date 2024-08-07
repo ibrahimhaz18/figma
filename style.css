@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.navagation {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.navagation nav {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.loginBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.loginBtn nav {
+    margin-right: 20px; 
+}
+
+.loginBtn .button {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.iconMenu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    .navagation {
+        display: none;
+    }
+
+    .loginBtn {
+        display: none;
+    }
+
+    .iconMenu {
+        display: block;
+    }
+
+    .flip {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    .logoNav {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.flip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottomleft {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#para {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#btnbottom {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.side img {
+    max-width: 100%;
+}
+
+@media (min-width: 769px) {
+    #mobile {
+        display: none;
+    }
+}
